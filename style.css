@@ -1,0 +1,154 @@
+@import url("https://fonts.google.com/specimen/Outfit");
+
+:root {
+    --soft-blue:  hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    
+--main-bg: hsl(217, 54%, 11%);
+--card-bg: hsl(216, 50%, 16%);
+--line: hsl(215, 32%, 27%);
+--White:hsl(0, 0%, 100%);
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+}
+
+body{
+   
+    background-color: var(--main-bg);
+    font-family: "outfit", sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    margin: 1.25rem;
+    justify-content: center;
+    align-items: center; 
+}
+
+p{
+    color: var(--soft-blue);
+
+}
+
+.container {
+    padding: 15px 20px;
+    background-color: var(--card-bg);
+    max-width: 330px;
+    border-radius: 10px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.price-container{
+    display: flex;
+}
+
+.price, .time{
+    width: 50%;
+}
+
+.float-left{
+    float: left !important;
+    margin-top: 6px;
+}
+
+.float-right{
+    float: right !important;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
+.avatar-container {
+    text-align: left;
+}
+
+.content{
+    margin-top: 18px;
+
+}
+
+.sentence-equi {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 24px;
+    height: auto;
+    float: left;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+.name {
+    float: left;
+    padding: 10px;
+
+}
+
+strong {
+    color: white;
+}
+
+.product-img {
+    max-width: 300px;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    object-position: top;
+    align-items: center;
+    margin-top: 5px;
+}
+
+h3 {
+    color: var(--White);
+    display: inline;
+    
+}
+
+
+h5 {
+    color: var(--Cyan);
+    margin-left: 5px;
+}
+
+h6 {
+    color: var(--soft-blue);
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+
+.white-line {
+    border-bottom: 1px solid white;
+    padding: 10px 8px;
+    margin-bottom: 8px;
+    opacity: 0.2;
+}
+
+
+.product-img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.attribution {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    font-variant: small-caps;
+  }
+
+@media (min-width: 350px) {
+    .container {
+      width: 350px;
+    }
+  }
+
